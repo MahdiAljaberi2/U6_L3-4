@@ -1,6 +1,7 @@
 class Main {
   public static void main(String[] args){
 
+/*
  String[] words2 = {"Apple","Banana","Cherry","Grape","Orange"};
 
 for (int i=0;i<words2.length;i++)
@@ -44,9 +45,53 @@ for (int i=0;i<nums.length;i++)
 {
   System.out.println(nums[i]+" ");
 }
+*/
 
-  
+//shift to the left
+int[] nums2={1,2,3,4};
+int temp=nums2[0];
 
+for (int i=0;i<nums2.length-1;i++)
+{
+  nums2[i]=nums2[i+1];
+}
+nums2[nums2.length-1]=temp;
+
+for (int i=0;i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
+
+//shift to the right
+int temp2=nums2[nums2.length-1];
+
+for (int i=nums2.length-1;i>0;i--)
+{
+  nums2[i]=nums2[i-1];
+}
+nums2[0]=temp2;
+
+System.out.println();
+for (int i=0;i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
+
+//reversing the elements - using swap inside the loop
+
+System.out.println();
+for (int i=0;i<nums2.length/2;i++)
+{
+  int j=nums2.length-i-1;
+  int temp3=nums2[i];
+  nums2[i]=nums2[j];
+  nums2[j]=temp3;
+}
+
+for (int i=0;i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
 
   }
 }
