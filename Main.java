@@ -1,9 +1,36 @@
 class Main {
   public static void main(String[] args){
 
-/*
  String[] words2 = {"Apple","Banana","Cherry","Grape","Orange"};
 
+ //for each
+ for(String fruit:words2)
+ {
+   System.out.println(fruit);
+ }
+
+ //for each print only fruits with length 5
+ for(String fruit:words2)
+ {
+   if(fruit.length()==5)
+   {
+     System.out.println(fruit);
+   }
+ }
+
+ int[] nums4={12,65,80,70,34,22};
+ int sum=0;
+
+ for(int x:nums4)
+ {
+   sum+=x;
+ }
+
+//System.out.printf()
+System.out.print("The average of nums is ");
+System.out.println("%.2f%n",((double)sum/num4.length));
+
+/*
 for (int i=0;i<words2.length;i++)
 {
   String firstl=words2[i].substring(0,1);
@@ -47,6 +74,7 @@ for (int i=0;i<nums.length;i++)
 }
 */
 
+/*
 //shift to the left
 int[] nums2={1,2,3,4};
 int temp=nums2[0];
@@ -92,6 +120,6 @@ for (int i=0;i<nums2.length;i++)
 {
   System.out.print(nums2[i]+" ");
 }
-
+*/
   }
 }
